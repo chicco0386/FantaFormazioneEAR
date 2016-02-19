@@ -70,12 +70,8 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- <dependency>
-			<groupId>it.zeze</groupId>
-			<artifactId>FantaFormazioneWebMaven</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<type>war</type>
-		</dependency> -->
+		<!-- <dependency> <groupId>it.zeze</groupId> <artifactId>FantaFormazioneWebMaven</artifactId> 
+			<version>0.0.1-SNAPSHOT</version> <type>war</type> </dependency> -->
 		<dependency>
 			<groupId>it.zeze</groupId>
 			<artifactId>FantaWebService</artifactId>
@@ -88,9 +84,9 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>apache-log4j</groupId>
+			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.14</version>
+			<version>1.2.16</version>
 		</dependency>
 	</dependencies>
 </project>

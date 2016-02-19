@@ -33,6 +33,7 @@
 						</goals>
 						<configuration>
 							<outputDirectory>/home/enrico/Scrivania/ZeZe/jboss-as-7.1.1.Final/standalone/deployments</outputDirectory>
+							<outputDirectory>/home/enrico/Scrivania/ZeZe/wildfly-10.0.0.Final/standalone/deployments</outputDirectory>
 							<resources>
 								<resource>
 									<directory>target</directory>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-deployment-structure>
     <deployment>
+        <!--<exclude-subsystems>-->
+            <!--<subsystem name="jaxrs"/>-->
+            <!--<subsystem name="webservices"/>-->
+            <!--<subsystem name="resteasy" />-->
+        <!--</exclude-subsystems>-->
         <exclusions>
             <module name="org.apache.log4j"/>
             <module name="org.apache.logging.log4j2"/>

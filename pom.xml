@@ -25,27 +25,27 @@
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>2.6</version>
 				<executions>
+					<!--<execution>-->
+						<!--<id>copy-resources</id>-->
+						<!--&lt;!&ndash; here the phase you need &ndash;&gt;-->
+						<!--<phase>install</phase>-->
+						<!--<goals>-->
+							<!--<goal>copy-resources</goal>-->
+						<!--</goals>-->
+						<!--<configuration>-->
+							<!--<outputDirectory>/home/enrico/Scrivania/ZeZe/wildfly-10.0.0.Final/standalone/deployments</outputDirectory>-->
+							<!--<resources>-->
+								<!--<resource>-->
+									<!--<directory>target</directory>-->
+									<!--<includes>-->
+										<!--<include>FantaFormazioneEAR.ear</include>-->
+									<!--</includes>-->
+								<!--</resource>-->
+							<!--</resources>-->
+						<!--</configuration>-->
+					<!--</execution>-->
 					<execution>
-						<id>copy-resources</id>
-						<!-- here the phase you need -->
-						<phase>install</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>/home/enrico/Scrivania/ZeZe/wildfly-10.0.0.Final/standalone/deployments</outputDirectory>
-							<resources>
-								<resource>
-									<directory>target</directory>
-									<includes>
-										<include>FantaFormazioneEAR.ear</include>
-									</includes>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-					<execution>
-						<id>copy-resources-2</id>
+						<id>copy-resources-as</id>
 						<!-- here the phase you need -->
 						<phase>install</phase>
 						<goals>
@@ -63,6 +63,25 @@
 							</resources>
 						</configuration>
 					</execution>
+                    <execution>
+                        <id>copy-resources-eap</id>
+                        <!-- here the phase you need -->
+                        <phase>install</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>/home/enrico/Scrivania/ZeZe/jboss-eap-6.1/standalone/deployments</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>target</directory>
+                                    <includes>
+                                        <include>FantaFormazioneEAR.ear</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
 				</executions>
 			</plugin>
 		</plugins>

@@ -1,114 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-deployment-structure>
     <deployment>
-        <!--<exclude-subsystems>-->
-            <!--<subsystem name="jaxrs"/>-->
-            <!--<subsystem name="webservices"/>-->
-            <!--<subsystem name="resteasy" />-->
-        <!--</exclude-subsystems>-->
+        <exclude-subsystems>
+            <subsystem name="jaxrs"/>
+            <subsystem name="webservices"/>
+            <subsystem name="resteasy"/>
+        </exclude-subsystems>
         <exclusions>
             <module name="org.apache.log4j"/>
             <module name="org.apache.logging.log4j2"/>
 
-            <!--<module name="org.apache.commons.logging" />-->
-            <!--<module name="org.slf4j" />-->
-            <!--<module name="org.slf4j.ext" />-->
-            <!--<module name="org.slf4j.jcl-over-slf4j" />-->
-            <!--&lt;!&ndash; Exclude slf4j-jboss-logmanager &ndash;&gt;-->
-            <!--<module name="org.slf4j.impl" />-->
-            <!--<module name="org.apache.log4j" />-->
-            <!--&lt;!&ndash; Exclude Resteasy &ndash;&gt;-->
-            <!--<module name="org.jboss.resteasy" />-->
-            <!--<module name="org.jboss.resteasy-cdi" />-->
-            <!--<module name="org.jboss.resteasy-crypto" />-->
-            <!--<module name="org.jboss.resteasy-jackson2-provider" />-->
-            <!--<module name="org.jboss.resteasy-jackson-provider" />-->
-            <!--<module name="org.jboss.resteasy-jaxb-provider" />-->
-            <!--<module name="org.jboss.resteasy-jaxrs" />-->
-            <!--<module name="org.jboss.resteasy-jettison-provider" />-->
-            <!--<module name="org.jboss.resteasy-jsapi" />-->
-            <!--<module name="org.jboss.resteasy-json-p-provider" />-->
-            <!--<module name="org.jboss.resteasy-multipart-provider" />-->
-            <!--<module name="org.jboss.resteasy-spring" />-->
-            <!--<module name="org.jboss.resteasy-validator-provider-11" />-->
-            <!--<module name="org.jboss.resteasy-yaml-provider" />-->
-            <!--<module name="org.jboss.as.jaxrs" />-->
-            <!--<module name="org.jboss.as.webservices.*" />-->
-            <!--<module name="org.jboss.ws.*" />-->
-            <!--<module name="org.codehaus.jackson.jackson-core-asl" />-->
-            <!--<module name="org.codehaus.jackson.jackson-jaxrs" />-->
-            <!--<module name="org.codehaus.jackson.jackson-mapper-asl" />-->
-            <!--<module name="org.codehaus.jackson.jackson-xc" />-->
-            <!--<module name="org.codehaus.jettison" />-->
-
-            <!--&lt;!&ndash; For JBOSS EAP 6.4 &ndash;&gt;-->
-            <!--&lt;!&ndash;<module name="javaee.api" />&ndash;&gt;-->
-            <!--<module name="javax.ws.rs.api" />-->
-            <!--<module name="javax.ws.rs.core" />-->
-            <!--<module name="javax.xml.bind.api" />-->
-
-            <!--&lt;!&ndash; JBOSS EAP 7 &ndash;&gt;-->
-            <!--<module name="org.jboss.resteasy.jose-jwt" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-atom-provider" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-cdi" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-crypto" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-jackson-provider" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-jackson2-provider" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-jaxb-provider" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-jaxrs" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-jettison-provider" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-jsapi" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-json-p-provider" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-multipart-provider" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-spring" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-validator-provider-11" />-->
-            <!--<module name="org.jboss.resteasy.resteasy-yaml-provider" />-->
-            <!--<module name="org.jboss.resteasy.async-http-servlet-30"/>-->
-            <!--<module name="com.fasterxml.classmate" />-->
-            <!--<module name="com.fasterxml.jackson.core.jackson-annotations" />-->
-            <!--<module name="com.fasterxml.jackson.core.jackson-core" />-->
-            <!--<module name="com.fasterxml.jackson.core.jackson-databind" />-->
-            <!--<module name="com.fasterxml.jackson.datatype.jackson-datatype-jdk8" />-->
-            <!--<module name="com.fasterxml.jackson.datatype.jackson-datatype-jsr310" />-->
-            <!--<module name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider" />-->
-            <!--<module name="org.codehaus.jackson.jackson-core-asl" />-->
-            <!--<module name="org.codehaus.jackson.jackson-jaxrs" />-->
-            <!--<module name="org.codehaus.jackson.jackson-mapper-asl" />-->
-            <!--<module name="org.codehaus.jackson.jackson-xc" />-->
-            <!--<module name="org.codehaus.jettison" />-->
-            <!--<module name="org.codehaus.woodstox" />-->
-            <!--<module name="org.apache.activemq.artemis" />-->
-            <!--<module name="org.apache.activemq.artemis.journal" />-->
-            <!--<module name="org.apache.activemq.artemis.protocol.hornetq" />-->
-            <!--<module name="org.apache.activemq.artemis.ra" />-->
-            <!--<module name="org.apache.avro" />-->
-            <!--<module name="org.apache.commons.beanutils" />-->
-            <!--<module name="org.apache.commons.cli" />-->
-            <!--<module name="org.apache.commons.codec" />-->
-            <!--<module name="org.apache.commons.collections" />-->
-            <!--<module name="org.apache.commons.io" />-->
-            <!--<module name="org.apache.commons.lang" />-->
-            <!--<module name="org.apache.commons.logging" />-->
-            <!--<module name="org.apache.commons.pool" />-->
-            <!--<module name="org.apache.cxf" />-->
-            <!--<module name="org.apache.cxf.impl" />-->
-            <!--<module name="org.apache.cxf.services-sts" />-->
-            <!--<module name="org.apache.cxf.ws-security" />-->
-            <!--<module name="org.apache.httpcomponents" />-->
-            <!--<module name="org.apache.james.mime4j" />-->
-            <!--<module name="org.apache.log4j" />-->
-            <!--<module name="org.apache.lucene" />-->
-            <!--<module name="org.apache.lucene.internal" />-->
-            <!--<module name="org.apache.neethi" />-->
-            <!--<module name="org.apache.openjpa" />-->
-            <!--<module name="org.apache.santuario.xmlsec" />-->
-            <!--<module name="org.apache.velocity" />-->
-            <!--<module name="org.apache.ws.security" />-->
-            <!--<module name="org.apache.ws.xmlschema" />-->
-            <!--<module name="org.apache.xalan" />-->
-            <!--<module name="org.apache.xerces" />-->
-            <!--<module name="org.apache.xml-resolver" />-->
-            <!--<module name="org.bouncycastle" />-->
+            <!-- Exclude slf4j 1.6.1, we provide 1.7.5 -->
+            <module name="org.apache.commons.logging"/>
+            <module name="org.slf4j"/>
+            <module name="org.slf4j.ext"/>
+            <module name="org.slf4j.jcl-over-slf4j"/>
+            <!-- Exclude slf4j-jboss-logmanager -->
+            <module name="org.slf4j.impl"/>
+            <module name="org.apache.log4j"/>
+            <!-- Exclude Resteasy -->
+            <module name="org.jboss.resteasy"/>
+            <module name="org.jboss.resteasy-cdi"/>
+            <module name="org.jboss.resteasy-crypto"/>
+            <module name="org.jboss.resteasy-jackson2-provider"/>
+            <module name="org.jboss.resteasy-jackson-provider"/>
+            <module name="org.jboss.resteasy-jaxb-provider"/>
+            <module name="org.jboss.resteasy-jaxrs"/>
+            <module name="org.jboss.resteasy-jettison-provider"/>
+            <module name="org.jboss.resteasy-jsapi"/>
+            <module name="org.jboss.resteasy-json-p-provider"/>
+            <module name="org.jboss.resteasy-multipart-provider"/>
+            <module name="org.jboss.resteasy-spring"/>
+            <module name="org.jboss.resteasy-validator-provider-11"/>
+            <module name="org.jboss.resteasy-yaml-provider"/>
+            <!--<module name="javaee.api"/>-->
+            <module name="javax.ws.rs.api"/>
+            <module name="javax.ws.rs.core"/>
+            <module name="org.jboss.as.jaxrs"/>
+            <module name="org.jboss.as.webservices.*"/>
+            <module name="org.jboss.ws.*"/>
+            <module name="org.codehaus.jackson.jackson-core-asl"/>
+            <module name="org.codehaus.jackson.jackson-jaxrs"/>
+            <module name="org.codehaus.jackson.jackson-mapper-asl"/>
+            <module name="org.codehaus.jackson.jackson-xc"/>
+            <module name="org.codehaus.jettison"/>
         </exclusions>
     </deployment>
 </jboss-deployment-structure>

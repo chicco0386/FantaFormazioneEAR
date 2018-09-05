@@ -20,22 +20,21 @@
             <module name="org.apache.log4j"/>
             <!-- Exclude Resteasy -->
             <module name="org.jboss.resteasy"/>
-            <module name="org.jboss.resteasy-cdi"/>
-            <module name="org.jboss.resteasy-crypto"/>
-            <module name="org.jboss.resteasy-jackson2-provider"/>
-            <module name="org.jboss.resteasy-jackson-provider"/>
-            <module name="org.jboss.resteasy-jaxb-provider"/>
-            <module name="org.jboss.resteasy-jaxrs"/>
-            <module name="org.jboss.resteasy-jettison-provider"/>
-            <module name="org.jboss.resteasy-jsapi"/>
-            <module name="org.jboss.resteasy-json-p-provider"/>
-            <module name="org.jboss.resteasy-multipart-provider"/>
-            <module name="org.jboss.resteasy-spring"/>
-            <module name="org.jboss.resteasy-validator-provider-11"/>
-            <module name="org.jboss.resteasy-yaml-provider"/>
-            <!--<module name="javaee.api"/>-->
+            <module name="org.jboss.resteasy.resteasy-atom-provider"/>
+            <module name="org.jboss.resteasy.resteasy-cdi"/>
+            <module name="org.jboss.resteasy.resteasy-crypto"/>
+            <module name="org.jboss.resteasy.resteasy-jackson2-provider"/>
+            <module name="org.jboss.resteasy.resteasy-jackson-provider"/>
+            <module name="org.jboss.resteasy.resteasy-jaxb-provider"/>
+            <module name="org.jboss.resteasy.resteasy-jaxrs"/>
+            <module name="org.jboss.resteasy.resteasy-jettison-provider"/>
+            <module name="org.jboss.resteasy.resteasy-jsapi"/>
+            <module name="org.jboss.resteasy.resteasy-json-p-provider"/>
+            <module name="org.jboss.resteasy.resteasy-multipart-provider"/>
+            <module name="org.jboss.resteasy.resteasy-spring"/>
+            <module name="org.jboss.resteasy.resteasy-validator-provider-11"/>
+            <module name="org.jboss.resteasy.resteasy-yaml-provider"/>
             <module name="javax.ws.rs.api"/>
-            <module name="javax.ws.rs.core"/>
             <module name="org.jboss.as.jaxrs"/>
             <module name="org.jboss.as.webservices.*"/>
             <module name="org.jboss.ws.*"/>
@@ -44,6 +43,40 @@
             <module name="org.codehaus.jackson.jackson-mapper-asl"/>
             <module name="org.codehaus.jackson.jackson-xc"/>
             <module name="org.codehaus.jettison"/>
+
+            <module name="javaee.api"/>
         </exclusions>
+        <dependencies>
+            <module name="javax.activation.api" export="true"/>
+            <module name="javax.annotation.api" export="true"/>
+            <module name="javax.ejb.api" export="true"/>
+            <module name="javax.el.api" export="true"/>
+            <module name="javax.enterprise.api" export="true"/>
+            <module name="javax.enterprise.deploy.api" export="true"/>
+            <module name="javax.inject.api" export="true"/>
+            <module name="javax.interceptor.api" export="true"/>
+            <module name="javax.jms.api" export="true"/>
+            <module name="javax.jws.api" export="true"/>
+            <module name="javax.mail.api" export="true"/>
+            <module name="javax.management.j2ee.api" export="true"/>
+            <module name="javax.persistence.api" export="true"/>
+            <module name="javax.resource.api" export="true"/>
+            <module name="javax.rmi.api" export="true"/>
+            <module name="javax.security.auth.message.api" export="true"/>
+            <module name="javax.security.jacc.api" export="true"/>
+            <module name="javax.servlet.api" export="true"/>
+            <module name="javax.servlet.jsp.api" export="true"/>
+            <module name="javax.transaction.api" export="true"/>
+            <module name="javax.validation.api" export="true"/>
+
+            <!-- <module name="javax.ws.rs.api" export="true" services="export"/> -->
+
+            <module name="javax.xml.bind.api" export="true"/>
+            <module name="javax.xml.registry.api" export="true"/>
+            <module name="javax.xml.soap.api" export="true"/>
+            <module name="javax.xml.ws.api" export="true"/>
+            <!-- This one always goes last. -->
+            <module name="javax.api" export="true"/>
+        </dependencies>
     </deployment>
 </jboss-deployment-structure>
